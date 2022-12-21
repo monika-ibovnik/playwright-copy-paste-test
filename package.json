@@ -15,6 +15,6 @@
     "test": "NODE_ENV=Control npx playwright test",
     "test:mac": "NODE_ENV=Meta npx playwright test",
     "prettify": "prettier --write .",
-    "docker:run": "docker run -v $(pwd):/e2e --ipc=host --usr root -it --rm mcr.microsoft.com/playwright:v1.29.0-focal /bin/bash"
+    "docker:run": "docker run -v $(pwd):/e2e --ipc=host --user root -it --rm mcr.microsoft.com/playwright:v1.29.0-focal /bin/bash"
   }
 }
