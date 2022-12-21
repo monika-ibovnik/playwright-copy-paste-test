@@ -1,0 +1,20 @@
+{
+  "name": "copy-paste-e2e",
+  "version": "1.0.0",
+  "engines": {
+    "node": "=16",
+    "npm": "~8"
+  },
+  "description": "Curato e2e tests",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.29.0",
+    "prettier": "^2.7.1"
+  },
+  "scripts": {
+    "test": "NODE_ENV=Control npx playwright test",
+    "test:mac": "NODE_ENV=Meta npx playwright test",
+    "prettify": "prettier --write .",
+    "docker:run": "docker run -v $(pwd):/e2e --ipc=host -it --rm mcr.microsoft.com/playwright:v1.29.0-focal /bin/bash"
+  }
+}
