@@ -9,6 +9,9 @@ const config: PlaywrightTestConfig = {
     headless: true,
     browserName: "chromium",
     screenshot: "only-on-failure",
+    contextOptions: {
+      permissions: ["clipboard-read", "clipboard-write"],
+    },
   },
 };
 
