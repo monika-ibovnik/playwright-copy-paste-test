@@ -1,5 +1,5 @@
 # playwright-copy-paste-test
-a test to present the differences in clipboard events between local machine and docker image
+a test to present the differences in clipboard events between local machine and the official microsoft playwright docker image
 
 
 ## installation and testing
